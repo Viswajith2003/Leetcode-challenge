@@ -11,4 +11,5 @@ for(let num of arr){
     }
 }
 
-console.log([...dupli]);
+console.log("Uniq elements :"+[...current]);
+console.log("Duplicate elements :"+[...dupli]);
