@@ -6,7 +6,7 @@
 // let org = new Set();
 
 // let s = str.split("");
-// for (let word of s) {
+// for (let word of s.toLowerCase) {
 //   if (vowel.has(word)) {
 //     org.add(word);
 //   }
@@ -16,17 +16,16 @@
 // console.log("vowels :" + [...org]);
 // console.log("Count of vowels :" + org.size);
 
-
 //Total count of vowels
 let str = "viswajithosu";
 let vowel = new Set(["a", "e", "i", "o", "u"]);
 
-let count=0;
+let count = 0;
 
-for(let word of str){
-    if(vowel.has(word)){
-        count++
-    }
+for (let word of str.toLowerCase) {
+  if (vowel.has(word)) {
+    count++;
+  }
 }
 
-console.log("Count of vowels :",count)
+console.log("Count of vowels :", count);
