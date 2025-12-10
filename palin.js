@@ -17,8 +17,7 @@
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 var isPalindrome = function (x) {
-  let rev = 0,
-    last;
+  let rev = 0,last;
   let org = x;
 
   if (x < 0) {

@@ -17,15 +17,22 @@
 // console.log("Count of vowels :" + org.size);
 
 //Total count of vowels
-let str = "viswajithosu";
-let vowel = new Set(["a", "e", "i", "o", "u"]);
+let str = "MentorBrostudents";
 
+let vowel = ["a", "e", "i", "o", "u"];
+// let current = [];
+let uniq=new Set();
 let count = 0;
 
-for (let word of str.toLowerCase) {
-  if (vowel.has(word)) {
-    count++;
-  }
+for (let char of str.toLowerCase()) {
+  if (vowel.includes(char)) {    //[ 'e', 'o', 'o', 'u', 'e' ] 
+    // current.push(char); 
+    uniq.add(char);   
+    // if(!uniq.includes(char))
+    //     uniq.push(char);
+    }
 }
+// count=uniq.length
 
-console.log("Count of vowels :", count);
+console.log("vowels are:",[...uniq])
+console.log("vowels count:", uniq.size)
