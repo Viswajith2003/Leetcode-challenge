@@ -1,11 +1,19 @@
 
 // reverse a string
 
-str = "viswajith";
-let rev = [...str].reverse().join("");
-console.log(rev);
+// str = "viswajith";
+// let rev = [...str].reverse().join("");
+// console.log(rev);
 
 
+let str="viswajith";
+let rev=" "
+
+for(let i=str.length-1;i>=0;i--){
+    rev+=str[i];
+}
+
+console.log(rev)
 
 // Example :
 // Input: s = ["h","e","l","l","o"]
@@ -28,5 +36,7 @@ console.log(rev);
 
 // s = ["h", "e", "l", "l", "o"];
 // console.log(revStr(s));
+
+
 
 
