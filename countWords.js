@@ -1,6 +1,6 @@
 
 function countWord(str){
-    let count={'h':1}         //{ "property":value  }
+    let count={}         //{ "property":value  }
     for(let char of str){
         if(!count[char]){     
             count[char]=1
@@ -11,7 +11,7 @@ function countWord(str){
     return count
 }
 
-let str="hello";
+let str="aaabbcccdd";
 console.log(countWord(str))
 
 
